@@ -1,11 +1,17 @@
-import React from "react";
-
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center p-8">
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <p className="max-w-2xl text-gray-300">Saya adalah seorang developer yang fokus di frontend dengan React. Suka eksplor animasi modern dan integrasi Firebase.</p>
-      <model-viewer src="/card.glb" alt="3D Card" auto-rotate camera-controls style={{width: "400px", height: "400px"}}></model-viewer>
-    </div>
+    <section id="about" className="py-20 bg-gray-900 text-white">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-12 text-glow">About Me</h2>
+        <div className="glass max-w-2xl mx-auto p-6 rounded-xl">
+          <p>
+            Saya seorang <span className="text-purple-400">Frontend Developer</span> 
+            dengan fokus pada React, Vite, Tailwind, dan Firebase. 
+            Saya suka membangun aplikasi web modern yang interaktif 
+            dengan animasi dan desain elegan.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
